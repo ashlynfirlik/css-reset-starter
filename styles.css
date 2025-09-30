@@ -88,6 +88,16 @@ header, footer{
     background-color: var(--mint);
 }
 
+h1 {
+    font-weight: bold;
+    font-size: 2em;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 /* Navigation Styles */
 nav{
     width: 50%;
@@ -99,7 +109,7 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    padding: 0;
+    padding: 0 0 1rem 0;
 }
 
 nav a{
@@ -125,6 +135,26 @@ main > section{
 /* Styles for the h2 & h3 tags */
 h2, h3{
     text-align: center;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
 }
 
 /* Paragraph Styles */
@@ -191,6 +221,11 @@ fieldset{
     gap: 1rem;
     margin: 1rem 0;
     border-color: var(--red);
+    border-width: 2px;
+    border-style: groove;
+    padding-block: 0.35em 0.625em;
+    padding-inline: 0.75em;
+
 }
 
 /* Code for Custom Radios - Compare to Your zyBook, I added additional code to make these match my form styles */
@@ -262,6 +297,15 @@ textarea{
     color: var(--dk-gray);
 }
 
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+    unicode-bidi: isolate;
+}
+
 /* Code Styles */
 code{
     font-family: var(--code-fonts);
@@ -270,7 +314,11 @@ code{
 
 /* for the pre block */
 pre{
+    display: block;
     font-family: var(--code-fonts);
+    white-space: pre;
+    margin-block: 1em 1em;
+    margin-inline: 0px;
 }
 
 pre code{
